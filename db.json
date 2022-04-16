@@ -1,0 +1,66 @@
+{
+  "city": [
+    {
+      "cityName": "Pune",
+      "population": "100000",
+      "country": "India",
+      "id": 1
+    },
+    {
+      "cityName": "Delhi",
+      "population": "150000",
+      "country": "India",
+      "id": 2
+    },
+    {
+      "cityName": "Mumbai",
+      "population": "200000",
+      "country": "India",
+      "id": 3
+    },
+    {
+      "cityName": "colambo",
+      "population": "150000",
+      "country": "Sri Lanka",
+      "id": 4
+    },
+    {
+      "cityName": "sydney",
+      "population": "95000",
+      "country": "Australia",
+      "id": 5
+    },
+    {
+      "cityName": "Cape town",
+      "population": "110000",
+      "country": "South africa",
+      "id": 6
+    }
+  ],
+  "country": [
+    {
+      "country": "India",
+      "id": 1
+    },
+    {
+      "country": "Sri Lanka",
+      "id": 2
+    },
+    {
+      "country": "Australia",
+      "id": 3
+    },
+    {
+      "country": "South africa",
+      "id": 4
+    },
+    {
+      "country": "England",
+      "id": 5
+    },
+    {
+      "country": "West indies",
+      "id": 6
+    }
+  ]
+}
