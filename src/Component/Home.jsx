@@ -20,17 +20,18 @@ const Main = styled.div`
     & a{
         text-decoration:none;
         text-align:auto;
-        color:black;
+        color:green;
         font-weight:500;
     }
     & .filter{
         height:30px;
         display:flex;
-        gap:0 5%
+        gap:0 2%
     }
     & .deleteBtn{
         cursor:pointer;
         font-weight:500;
+        color:red;
     }
   `;
 

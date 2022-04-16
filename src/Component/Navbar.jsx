@@ -5,7 +5,7 @@ export const Navbar = () => {
 
   const Main = styled.div`
     height:50px;
-    background-color:#06113C;
+    background-color:#1976d2;
     display:flex;
     justify-content:space-evenly;
 
