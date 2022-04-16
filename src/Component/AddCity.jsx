@@ -36,7 +36,7 @@ export const AddCity = () => {
 
   const addData = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8080/city", state).then(() => {
+    axios.post("https://city--country.herokuapp.com/city", state).then(() => {
       alert("City added succesfully");
       dispatch({type:"cityName",payload:""})
       dispatch({type:"population",payload:""})

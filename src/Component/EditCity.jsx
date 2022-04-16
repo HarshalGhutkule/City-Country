@@ -51,7 +51,7 @@ export const EditCity = () => {
 
   const updateData = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:8080/city/${id}`, state).then(() => {
+    axios.put(`https://city--country.herokuapp.com/city/${id}`, state).then(() => {
       alert("Updated succesfully");
       dispatch({type:"cityName",payload:""})
       dispatch({type:"population",payload:""})

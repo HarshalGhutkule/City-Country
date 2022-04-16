@@ -46,7 +46,7 @@ React.useEffect(()=>{
 const diapatch = useDispatch();
 
 const getData = () => {
-    axios.get("http://localhost:8080/city").then((res) => {
+    axios.get("https://city--country.herokuapp.com/city").then((res) => {
       setData(res.data);
       diapatch(addDataToRedux(res.data));
     });

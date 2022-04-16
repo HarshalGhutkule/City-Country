@@ -36,7 +36,7 @@ export const AddCountry = () => {
 
   const addData = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8080/country", state).then(() => {
+    axios.post("https://city--country.herokuapp.com/country", state).then(() => {
       alert("Country added succesfully");
       dispatch({ type: "country", payload: "" });
     });
