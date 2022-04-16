@@ -36,7 +36,7 @@ export const AddCountry = () => {
 
   const addData = (e) => {
     e.preventDefault();
-    axios.post("https://city--country.herokuapp.com/country", state).then(() => {
+    axios.post("https://city--country.herokuapp.com/api/country", state).then(() => {
       alert("Country added succesfully");
       dispatch({ type: "country", payload: "" });
     });
