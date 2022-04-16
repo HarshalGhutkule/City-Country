@@ -54,7 +54,7 @@ const getData = () => {
   };
 
   const deleteCity = (id)=>{
-    axios.delete(`http://localhost:8080/city/${id}`).then((res) => {
+    axios.delete(`https://city--country.herokuapp.com/api/city/${id}`).then((res) => {
         getData();
     });
   }
