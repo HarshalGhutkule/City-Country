@@ -2,7 +2,7 @@ import TextField from "@mui/material/TextField";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
 import axios from "axios";
-import { useEffect, useReducer } from "react";
+import { useReducer } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -14,11 +14,7 @@ const Main = styled.div`
 
 export const EditCity = () => {
 
-    const initalState = {
-        cityName: "",
-        population: "",
-        country: "",
-    };
+    
 
   const reducer = (state, { type, payload }) => {
     switch (type) {
@@ -41,13 +37,13 @@ export const EditCity = () => {
 
     let {cityName,population,country} = actualData;
 
-  const [state, dispatch] = useReducer(reducer,initalState);
+    const initalState = {
+      cityName: cityName,
+      population: population,
+      country: country,
+  };
 
-  useEffect(()=>{
-    dispatch({type:"cityName",payload:cityName})
-    dispatch({type:"population",payload:population})
-    dispatch({type:"country",payload:country})
-},[])
+  const [state, dispatch] = useReducer(reducer,initalState);
 
   const updateData = (e) => {
     e.preventDefault();
